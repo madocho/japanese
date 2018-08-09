@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>리얼 여행 일본어 회화</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+      // 변수를 선언합니다.
+      var audio0 = new Audio("https://papago.naver.com/apis/tts/1.9.1_33361-754d9eda9d14f9e75dcfbf0c43b4601f-1533712500487");
+      var audio1 = new Audio("https://papago.naver.com/apis/tts/1.9.1_53198-b1c411087670cfd31a809c0d9d5c3ce7-1533713300823");
+      var audio2 = new Audio("https://papago.naver.com/apis/tts/1.9.1_10623-3a90c85bd3fd58be971a2ec879ecf831-1533713397108");
+      var audio3 = new Audio("https://papago.naver.com/apis/tts/1.9.1_13732-adf7a7a2debe4e2300548be2f039ddf8-1533713432695");
+
+    //  var audio = new Audio("");
+  </script>
+
+    <style>
+    ul {
+    }
+    .gnbul {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    .gnbfoot {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      color: white;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+
+    li {
+    }
+    .gnbli {
+      float:left;
+    }
+
+    li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #FE0200;
+    }
+
+    .btnc {
+      background: #a8a8a8;
+      background-image: -webkit-linear-gradient(top, #a8a8a8, #7d7e80);
+      background-image: -moz-linear-gradient(top, #a8a8a8, #7d7e80);
+      background-image: -ms-linear-gradient(top, #a8a8a8, #7d7e80);
+      background-image: -o-linear-gradient(top, #a8a8a8, #7d7e80);
+      background-image: linear-gradient(to bottom, #a8a8a8, #7d7e80);
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      color: #ffffff;
+      font-size: 14px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+    }
+
+    div {
+    }
+
+    .btndiv {
+      text-align:right;
+      margin-top:-45px;
+      margin-right:20px;
+      padding-bottom: 5px;
+    }
+
+    h2 {
+    font-family:sans-serif;
+    }
+    .list {
+      font-family:sans-serif;
+      margin:0;
+      padding:20px 0 0;
+    }
+    .list > li {
+      display:block;
+      background-color: #eee;
+      padding:10px;
+      box-shadow: inset 0 1px 0 #fff;
+    }
+    .avatar {
+      max-width: 150px;
+    }
+    img {
+      max-width: 100%;
+    }
+    h3 {
+      font-size: 16px;
+      margin:0 0 0.3rem;
+      font-weight: normal;
+      font-weight:bold;
+    }
+    p {
+      margin:0;
+    }
+    .kr {
+      font-size: 12px;
+      color: #CCC;
+    }
+
+    input {
+      border:solid 1px #ccc;
+      border-radius: 5px;
+      padding:10px 18px;
+      margin-bottom:10px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+    input:focus {
+      outline:none;
+      border-color:#aaa;
+    }
+    .sort {
+      padding:8px 30px;
+      border-radius: 6px;
+      border:none;
+      display:inline-block;
+      color:#fff;
+      text-decoration: none;
+      background-color: #28a8e0;
+      height:30px;
+    }
+    .sort:hover {
+      text-decoration: none;
+      background-color:#1b8aba;
+    }
+    .sort:focus {
+      outline:none;
+    }
+    .sort:after {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      content:"";
+      position: relative;
+      top:-10px;
+      right:-5px;
+    }
+    .sort.desc:after {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #fff;
+      content:"";
+      position: relative;
+      top:-10px;
+      right:-5px;
+    }
+    .sort.asc:after {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #fff;
+      content:"";
+      position: relative;
+      top:13px;
+      right:-5px;
+    }
+    </style>
+
+
+</head>
+
+<body>
+  <div style="margin-left:-8px;">
+  <ul class="gnbul">
+    <li class="gnbli"><a href="real_jp_1.html">기본 표현</a></li>
+    <li class="gnbli"><a href="real_jp_2.html">위급 상황</a></li>
+    <li class="gnbli"><a class="active" href="real_jp_3.html">교통/길 찾기</a></li>
+    <li class="gnbli"><a href="real_jp_4.html">숙소</a></li>
+    <li class="gnbli"><a href="real_jp_5.html">쇼핑</a></li>
+    <li class="gnbli"><a href="real_jp_6.html">음식점</a></li>
+  </ul>
+  <ul class="gnbfoot">
+    <div style="padding-top:10px; padding-bottom:10px;"><font color="red">리얼</font> 여행 일본어 회화</div>
+    <!-- <img src="img/foot.png" width="200px" height="35px" /> -->
+  </ul>
+</div>
+
+  <div id="users" style="margin-bottom:55px; padding-top:40px;">
+  <input class="search" placeholder="검색" />
+  <button class="sort asc" data-sort="kor">
+    가나다순 정렬
+  </button>
+
+  <ul class="list">
+    <li>
+      <h3 class="kor">이 전철은 공항으로 가나요?</h3>
+      <p class="jpn">この電車(でんしゃ)は空港(くうこう)に行(い)きますか。</p>
+      <p class="kr">코노 덴샤와 쿠우코오니 이키마스카</p>
+      <div class="btndiv"><button class="btnc" onclick="audio0.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">티켓 두 장 주세요.</h3>
+      <p class="jpn">チケット二枚(にまい)ください。</p>
+      <p class="kr">치켓토 니마이쿠다사이</p>
+      <div class="btndiv"><button class="btnc" onclick="audio1.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">그곳까지 걸어갈 수 있나요?</h3>
+      <p class="jpn">そこまで歩(ある)いて行(い)けますか。</p>
+      <p class="kr">소코마데 아루이테이케마스카</p>
+      <div class="btndiv"><button class="btnc" onclick="audio2.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">가까운 전철역이 어디인가요?</h3>
+      <p class="jpn">近(ちか)い電車(でんしゃ)駅(えき)がどこですか。</p>
+      <p class="kr">치카이 덴샤에키가 도코데스카</p>
+      <div class="btndiv"><button class="btnc" onclick="audio3.play()">음성</button></div>
+    </li>
+<!--
+    <li>
+      <h3 class="kor"></h3>
+      <p class="jpn"></p>
+      <p class="kr"></p>
+      <div class="btndiv"><button class="btnc" onclick="audio.play()">음성</button></div>
+    </li>
+-->
+  </ul>
+
+</div>
+
+<!-- 텍스트 복사
+<script src="js/clipboard.min.js"></script>
+<script>
+var clipboard = new Clipboard('.btnc');
+clipboard.on('success', function(e) {
+    console.log(e);
+});
+clipboard.on('error', function(e) {
+    console.log(e);
+});
+</script>
+텍스트 복사 끝 -->
+
+<!-- 리스트 검색 -->
+<script src="js/list.min.js"></script>
+
+<script>
+var options = {
+valueNames: [ 'kor' ]
+};
+
+var userList = new List('users', options);
+//# sourceURL=pen.js
+</script>
+<!-- 리스트 검색 끝 -->
+
+</body>
+</html>

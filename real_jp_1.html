@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>리얼 여행 일본어 회화</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+      // 변수를 선언합니다.
+      var audio0 = new Audio("https://papago.naver.com/apis/tts/1.9.1_3935-3e6e8601272675bb4820b0cda1c080cb-1533278366709");
+      var audio1 = new Audio("https://papago.naver.com/apis/tts/1.9.1_31191-a813f50a42310be10c666d1ec9a018c4-1533281819809");
+      var audio2 = new Audio("https://papago.naver.com/apis/tts/1.9.1_24246-c051df5da96add72193714319a131ddf-1533281848560");
+      var audio3 = new Audio("https://papago.naver.com/apis/tts/1.9.1_34102-60889c04907638e6ef027721661e9de5-1533278486257");
+      var audio4 = new Audio("https://papago.naver.com/apis/tts/1.9.1_55375-0b73bb820aa46c0d3d5517edb8049fce-1533281922037");
+      var audio5 = new Audio("https://papago.naver.com/apis/tts/1.9.1_15963-5244613cd61b22169fb21e1bde56b874-1533708790140");
+      var audio6 = new Audio("https://papago.naver.com/apis/tts/1.9.1_14872-98282c1c3be5e9ba5f8bdd87ad3a3086-1533708839195");
+      var audio7 = new Audio("https://papago.naver.com/apis/tts/1.9.1_56164-d93369d9cb5a946925428564c2333c6e-1533708942071");
+    //  var audio = new Audio("");
+  </script>
+
+    <style>
+    ul {
+    }
+    .gnbul {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    .gnbfoot {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      color: white;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+
+    li {
+    }
+    .gnbli {
+      float:left;
+    }
+
+    li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #FE0200;
+    }
+
+    .btnc {
+      background: #a8a8a8;
+      background-image: -webkit-linear-gradient(top, #a8a8a8, #7d7e80);
+      background-image: -moz-linear-gradient(top, #a8a8a8, #7d7e80);
+      background-image: -ms-linear-gradient(top, #a8a8a8, #7d7e80);
+      background-image: -o-linear-gradient(top, #a8a8a8, #7d7e80);
+      background-image: linear-gradient(to bottom, #a8a8a8, #7d7e80);
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      color: #ffffff;
+      font-size: 14px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+    }
+
+    div {
+    }
+
+    .btndiv {
+      text-align:right;
+      margin-top:-45px;
+      margin-right:20px;
+      padding-bottom: 5px;
+    }
+
+    h2 {
+    font-family:sans-serif;
+    }
+    .list {
+      font-family:sans-serif;
+      margin:0;
+      padding:20px 0 0;
+    }
+    .list > li {
+      display:block;
+      background-color: #eee;
+      padding:10px;
+      box-shadow: inset 0 1px 0 #fff;
+    }
+    .avatar {
+      max-width: 150px;
+    }
+    img {
+      max-width: 100%;
+    }
+    h3 {
+      font-size: 16px;
+      margin:0 0 0.3rem;
+      font-weight: normal;
+      font-weight:bold;
+    }
+    p {
+      margin:0;
+    }
+    .kr {
+      font-size: 12px;
+      color: #CCC;
+    }
+
+    input {
+      border:solid 1px #ccc;
+      border-radius: 5px;
+      padding:10px 18px;
+      margin-bottom:10px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+    input:focus {
+      outline:none;
+      border-color:#aaa;
+    }
+    .sort {
+      padding:8px 30px;
+      border-radius: 6px;
+      border:none;
+      display:inline-block;
+      color:#fff;
+      text-decoration: none;
+      background-color: #28a8e0;
+      height:30px;
+    }
+    .sort:hover {
+      text-decoration: none;
+      background-color:#1b8aba;
+    }
+    .sort:focus {
+      outline:none;
+    }
+    .sort:after {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      content:"";
+      position: relative;
+      top:-10px;
+      right:-5px;
+    }
+    .sort.desc:after {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #fff;
+      content:"";
+      position: relative;
+      top:-10px;
+      right:-5px;
+    }
+    .sort.asc:after {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #fff;
+      content:"";
+      position: relative;
+      top:13px;
+      right:-5px;
+    }
+    </style>
+
+
+</head>
+
+<body>
+  <div style="margin-left:-8px;">
+  <ul class="gnbul">
+    <li class="gnbli"><a class="active" href="real_jp_1.html">기본 표현</a></li>
+    <li class="gnbli"><a href="real_jp_2.html">위급 상황</a></li>
+    <li class="gnbli"><a href="real_jp_3.html">교통/길 찾기</a></li>
+    <li class="gnbli"><a href="real_jp_4.html">숙소</a></li>
+    <li class="gnbli"><a href="real_jp_5.html">쇼핑</a></li>
+    <li class="gnbli"><a href="real_jp_6.html">음식점</a></li>
+  </ul>
+  <ul class="gnbfoot">
+    <div style="padding-top:10px; padding-bottom:10px;"><font color="red">리얼</font> 여행 일본어 회화</div>
+    <!-- <img src="img/foot.png" width="200px" height="35px" /> -->
+  </ul>
+</div>
+
+  <div id="users" style="margin-bottom:55px; padding-top:40px;">
+  <input class="search" placeholder="검색" />
+  <button class="sort asc" data-sort="kor">
+    가나다순 정렬
+  </button>
+
+  <ul class="list">
+    <li>
+      <h3 class="kor">(아침 인사)안녕하세요.</h3>
+      <p class="jpn">おはようございます。</p>
+      <p class="kr">오하요오고자이마스</p>
+      <div class="btndiv"><button class="btnc" onclick="audio0.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">(오전/오후 인사)안녕하세요.</h3>
+      <p class="jpn">こんにちは。</p>
+      <p class="kr">콘니치와</p>
+      <div class="btndiv"><button class="btnc" onclick="audio1.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">(밤 인사)안녕하세요.</h3>
+      <p class="jpn">こんばんは。</p>
+      <p class="kr">콘반와</p>
+      <div class="btndiv"><button class="btnc" onclick="audio2.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">안녕히 계세요</h3>
+      <p class="jpn">さようなら。</p>
+      <p class="kr">사요오나</p>
+      <div class="btndiv"><button class="btnc" onclick="audio3.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">처음 뵙겠습니다.</h3>
+      <p class="jpn">はじめまして。</p>
+      <p class="kr">하지메마시테</p>
+      <div class="btndiv"><button class="btnc" onclick="audio4.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">감사합니다.</h3>
+      <p class="jpn">ありがとうございます。</p>
+      <p class="kr">아리가토오고자이마스</p>
+      <div class="btndiv"><button class="btnc" onclick="audio5.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">미안합니다.</h3>
+      <p class="jpn">すみません。</p>
+      <p class="kr">스미마센</p>
+      <div class="btndiv"><button class="btnc" onclick="audio6.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">괜찮습니다.</h3>
+      <p class="jpn">大丈夫(だいじょうぶ)です。</p>
+      <p class="kr">다이조오부데스</p>
+      <div class="btndiv"><button class="btnc" onclick="audio7.play()">음성</button></div>
+    </li>
+<!--
+    <li>
+      <h3 class="kor"></h3>
+      <p class="jpn"></p>
+      <p class="kr"></p>
+      <div class="btndiv"><button class="btnc" onclick="audio.play()">음성</button></div>
+    </li>
+-->
+  </ul>
+
+</div>
+
+<!-- 텍스트 복사
+<script src="js/clipboard.min.js"></script>
+<script>
+var clipboard = new Clipboard('.btnc');
+clipboard.on('success', function(e) {
+    console.log(e);
+});
+clipboard.on('error', function(e) {
+    console.log(e);
+});
+</script>
+텍스트 복사 끝 -->
+
+<!-- 리스트 검색 -->
+<script src="js/list.min.js"></script>
+
+<script>
+var options = {
+valueNames: [ 'kor' ]
+};
+
+var userList = new List('users', options);
+//# sourceURL=pen.js
+</script>
+<!-- 리스트 검색 끝 -->
+
+</body>
+</html>
