@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/paradeiser.min.css">
   <script>
       // 변수를 선언합니다.
       var audio0 = new Audio("https://papago.naver.com/apis/tts/1.9.1_3935-3e6e8601272675bb4820b0cda1c080cb-1533278366709");
@@ -49,6 +50,21 @@
       text-decoration: none;
       display: block;
       text-align: center;
+    }
+
+    .gnbus {
+      display: none;
+      position: absolute;
+      height: auto;
+      width: 30%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+    }
+
+    .gnbul li:lover ul {
+      display:block;
     }
 
     li {
@@ -154,7 +170,7 @@
       border-radius: 5px;
       padding:10px 18px;
       margin-bottom:10px;
-      margin-top: 60px;
+      margin-top: 30px;
       font-size: 14px;
     }
     input:focus {
@@ -213,11 +229,12 @@
     }
     </style>
 
-
 </head>
 
 <body>
   <div style="margin-left:-8px;">
+
+<!--
   <ul class="gnbul">
     <li class="gnbli"><a class="active" href="real_jp_1.html">기본 표현</a></li>
     <li class="gnbli"><a href="real_jp_2.html">위급 상황</a></li>
@@ -226,13 +243,41 @@
     <li class="gnbli"><a href="real_jp_5.html">쇼핑</a></li>
     <li class="gnbli"><a href="real_jp_6.html">음식점</a></li>
   </ul>
+-->
+
+  <nav class="paradeiser">
+    <div class="paradeiser_dropdown">
+      <a href="#menu1">
+          <span>회화</span>
+      </a>
+      <ul class="paradeiser_children" id="menu1">
+          <li><a href="#">기본 표현</a></li>
+          <li><a href="#">위급 상황</a></li>
+          <li><a href="#">교통/길 찾기</a></li>
+          <li><a href="#">숙소</a></li>
+          <li><a href="#">쇼핑</a></li>
+          <li><a href="#">음식점</a></li>
+          <li><a href="#!"></a></li>
+      </ul>
+    </div>
+      <a href="#">
+          <span>단어</span>
+      </a>
+      <a href="#">
+          <span>메뉴판</span>
+      </a>
+          <a href="#paradeiser-more">
+              <span>신고하기</span>
+          </a>
+  </nav>
+
   <ul class="gnbfoot">
     <div style="padding-top:10px; padding-bottom:10px;"><font color="red">리얼</font> 여행 일본어 회화</div>
     <!-- <img src="img/foot.png" width="200px" height="35px" /> -->
   </ul>
 </div>
 
-  <div id="users" style="margin-bottom:55px; padding-top:40px;">
+  <div id="users" style="margin-bottom:55px;">
   <input class="search" placeholder="검색" />
   <button class="sort asc" data-sort="kor">
     가나다순 정렬
@@ -244,12 +289,6 @@
       <p class="jpn">おはようございます。</p>
       <p class="kr">오하요오고자이마스</p>
       <div class="btndiv"><button class="btnc" onclick="audio0.play()">음성</button></div>
-        <ul class="list">
-          <li>
-            <p>단어 들어갈 부분 <button class="btns" onclick="audio0.play()"><i class="fas fa-play"></i></button>
-            </p>
-          </li>
-        </ul>
     </li>
     <li>
       <h3 class="kor">(오전/오후 인사)안녕하세요.</h3>
@@ -266,7 +305,7 @@
     <li>
       <h3 class="kor">안녕히 계세요</h3>
       <p class="jpn">さようなら。</p>
-      <p class="kr">사요오나</p>
+      <p class="kr">사요오나라</p>
       <div class="btndiv"><button class="btnc" onclick="audio3.play()">음성</button></div>
     </li>
     <li>
@@ -305,18 +344,6 @@
 
 </div>
 
-<!-- 텍스트 복사
-<script src="js/clipboard.min.js"></script>
-<script>
-var clipboard = new Clipboard('.btnc');
-clipboard.on('success', function(e) {
-    console.log(e);
-});
-clipboard.on('error', function(e) {
-    console.log(e);
-});
-</script>
-텍스트 복사 끝 -->
 
 <!-- 리스트 검색 -->
 <script src="js/list.min.js"></script>
