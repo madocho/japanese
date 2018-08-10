@@ -7,6 +7,7 @@
   <title>리얼 여행 일본어 회화</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/paradeiser.min.css">
   <script>
       // 변수를 선언합니다.
       var audio0 = new Audio("https://papago.naver.com/apis/tts/1.9.1_6526-06a9159752bb9dbcb7cee1fd3c5f8056-1533715149895");
@@ -133,7 +134,7 @@
       border-radius: 5px;
       padding:10px 18px;
       margin-bottom:10px;
-      margin-top: 60px;
+      margin-top: 30px;
       font-size: 14px;
     }
     input:focus {
@@ -197,6 +198,7 @@
 
 <body>
   <div style="margin-left:-8px;">
+<!--
   <ul class="gnbul">
     <li class="gnbli"><a href="real_jp_1.html">기본 표현</a></li>
     <li class="gnbli"><a href="real_jp_2.html">위급 상황</a></li>
@@ -205,13 +207,41 @@
     <li class="gnbli"><a href="real_jp_5.html">쇼핑</a></li>
     <li class="gnbli"><a class="active" href="real_jp_6.html">음식점</a></li>
   </ul>
+-->
+
+  <nav class="paradeiser">
+    <div class="paradeiser_dropdown">
+      <a href="#menu1">
+          <span>회화</span>
+      </a>
+      <ul class="paradeiser_children" id="menu1">
+          <li><a href="real_jp_1.html">기본 표현</a></li>
+          <li><a href="real_jp_2.html">위급 상황</a></li>
+          <li><a href="real_jp_3.html">교통/길 찾기</a></li>
+          <li><a href="real_jp_4.html">숙소</a></li>
+          <li><a href="real_jp_5.html">쇼핑</a></li>
+          <li><a href="real_jp_6.html">음식점</a></li>
+          <li><a href="#!"></a></li>
+      </ul>
+    </div>
+      <a href="#">
+          <span>단어</span>
+      </a>
+      <a href="#">
+          <span>메뉴판</span>
+      </a>
+          <a href="#">
+              <span>제보하기</span>
+          </a>
+  </nav>
+
   <ul class="gnbfoot">
     <div style="padding-top:10px; padding-bottom:10px;"><font color="red">리얼</font> 여행 일본어 회화</div>
     <!-- <img src="img/foot.png" width="200px" height="35px" /> -->
   </ul>
 </div>
 
-  <div id="users" style="margin-bottom:55px; padding-top:40px;">
+  <div id="users" style="margin-bottom:55px;">
   <input class="search" placeholder="검색" />
   <button class="sort asc" data-sort="kor">
     가나다순 정렬
@@ -220,25 +250,25 @@
   <ul class="list">
     <li>
       <h3 class="kor">이 가게의 추천 메뉴는 무엇입니까?</h3>
-      <p class="jpn">この店(みせ)のおすすめメニューは何(なん)ですか。</p>
+      <p class="jpn">この店<sup><small>みせ</small></sup>のおすすめメニューは何<sup><small>なん</small></sup>ですか。</p>
       <p class="kr">코노 미세노 오스스메메뉴우와 난데스카</p>
       <div class="btndiv"><button class="btnc" onclick="audio0.play()">음성</button></div>
     </li>
     <li>
       <h3 class="kor">얼마나 기다려야 하죠?</h3>
-      <p class="jpn">どのくらい待(ま)ちますか。</p>
+      <p class="jpn">どのくらい待<sup><small>ま</small></sup>ちますか。</p>
       <p class="kr">도노쿠라이 마치마스카</p>
       <div class="btndiv"><button class="btnc" onclick="audio1.play()">음성</button></div>
     </li>
     <li>
       <h3 class="kor">한국어 메뉴판이 있나요?</h3>
-      <p class="jpn">韓国語(かんこくご)のメニューがありますか。</p>
+      <p class="jpn">韓国語<sup><small>かんこくご</small></sup>のメニューがありますか。</p>
       <p class="kr">칸코쿠고노 메뉴우가 아리마스카</p>
       <div class="btndiv"><button class="btnc" onclick="audio2.play()">음성</button></div>
     </li>
     <li>
       <h3 class="kor">녹차로 부탁합니다.</h3>
-      <p class="jpn">緑茶(りょくちゃ)をお願(ねが)いします。</p>
+      <p class="jpn">緑茶<sup><small>りょくちゃ</small></sup>をお願<sup><small>ねが</small></sup>いします。</p>
       <p class="kr">료쿠차오 오네가이시마스</p>
       <div class="btndiv"><button class="btnc" onclick="audio3.play()">음성</button></div>
     </li>

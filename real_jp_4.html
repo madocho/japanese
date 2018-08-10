@@ -7,6 +7,7 @@
   <title>리얼 여행 일본어 회화</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/paradeiser.min.css">
   <script>
       // 변수를 선언합니다.
       var audio0 = new Audio("https://papago.naver.com/apis/tts/1.9.1_51570-e628942bf6b3b5fe10d6510230de2003-1533713620269");
@@ -134,7 +135,7 @@
       border-radius: 5px;
       padding:10px 18px;
       margin-bottom:10px;
-      margin-top: 60px;
+      margin-top: 30px;
       font-size: 14px;
     }
     input:focus {
@@ -198,6 +199,7 @@
 
 <body>
   <div style="margin-left:-8px;">
+<!--
   <ul class="gnbul">
     <li class="gnbli"><a href="real_jp_1.html">기본 표현</a></li>
     <li class="gnbli"><a href="real_jp_2.html">위급 상황</a></li>
@@ -206,13 +208,41 @@
     <li class="gnbli"><a href="real_jp_5.html">쇼핑</a></li>
     <li class="gnbli"><a href="real_jp_6.html">음식점</a></li>
   </ul>
+-->
+
+<nav class="paradeiser">
+  <div class="paradeiser_dropdown">
+    <a href="#menu1">
+        <span>회화</span>
+    </a>
+    <ul class="paradeiser_children" id="menu1">
+        <li><a href="real_jp_1.html">기본 표현</a></li>
+        <li><a href="real_jp_2.html">위급 상황</a></li>
+        <li><a href="real_jp_3.html">교통/길 찾기</a></li>
+        <li><a href="real_jp_4.html">숙소</a></li>
+        <li><a href="real_jp_5.html">쇼핑</a></li>
+        <li><a href="real_jp_6.html">음식점</a></li>
+        <li><a href="#!"></a></li>
+    </ul>
+  </div>
+    <a href="#">
+        <span>단어</span>
+    </a>
+    <a href="#">
+        <span>메뉴판</span>
+    </a>
+        <a href="#">
+            <span>제보하기</span>
+        </a>
+</nav>
+
   <ul class="gnbfoot">
     <div style="padding-top:10px; padding-bottom:10px;"><font color="red">리얼</font> 여행 일본어 회화</div>
     <!-- <img src="img/foot.png" width="200px" height="35px" /> -->
   </ul>
 </div>
 
-  <div id="users" style="margin-bottom:55px; padding-top:40px;">
+  <div id="users" style="margin-bottom:55px;">
   <input class="search" placeholder="검색" />
   <button class="sort asc" data-sort="kor">
     가나다순 정렬
@@ -221,25 +251,25 @@
   <ul class="list">
     <li>
       <h3 class="kor">체크인하고 싶습니다.</h3>
-      <p class="jpn">チェックイン、お願(ねが)いします。</p>
+      <p class="jpn">チェックイン、お願<sup><small>ねが</small></sup>いします。</p>
       <p class="kr">체쯔쿠인 오네가이시마스</p>
       <div class="btndiv"><button class="btnc" onclick="audio0.play()">음성</button></div>
     </li>
     <li>
       <h3 class="kor">짐을 맡겨도 됩니까?</h3>
-      <p class="jpn">荷物(にもつ)を預(あず)けてもいいですか。</p>
+      <p class="jpn">荷物<sup><small>にもつ</small></sup>を預<sup><small>あず</small></sup>けてもいいですか。</p>
       <p class="kr">니모츠오 아즈케테모 이이데스카</p>
       <div class="btndiv"><button class="btnc" onclick="audio1.play()">음성</button></div>
     </li>
     <li>
       <h3 class="kor">와이파이 비밀번호를 알려주세요.</h3>
-      <p class="jpn">ワイファイ秘密(ひみつ)番号(ばんごう)を教(おし)えてください。</p>
+      <p class="jpn">ワイファイ秘密<sup><small>ひみつ</small></sup>番号<sup><small>ばんごう</small></sup>を教<sup><small>おし</small></sup>えてください。</p>
       <p class="kr">와이화이 히미츠반고오오 오시에테쿠다사이</p>
       <div class="btndiv"><button class="btnc" onclick="audio2.play()">음성</button></div>
     </li>
     <li>
       <h3 class="kor">금연실로 주세요.</h3>
-      <p class="jpn">禁煙(きんえん)室(しつ)にください。</p>
+      <p class="jpn">禁煙<sup><small>きんえん</small></sup>室<sup><small>しつ</small></sup>にください。</p>
       <p class="kr">킨엔시츠니 쿠다사이</p>
       <div class="btndiv"><button class="btnc" onclick="audio3.play()">음성</button></div>
     </li>
@@ -254,19 +284,6 @@
   </ul>
 
 </div>
-
-<!-- 텍스트 복사
-<script src="js/clipboard.min.js"></script>
-<script>
-var clipboard = new Clipboard('.btnc');
-clipboard.on('success', function(e) {
-    console.log(e);
-});
-clipboard.on('error', function(e) {
-    console.log(e);
-});
-</script>
-텍스트 복사 끝 -->
 
 <!-- 리스트 검색 -->
 <script src="js/list.min.js"></script>
