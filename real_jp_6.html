@@ -11,10 +11,17 @@
   <link rel="stylesheet" href="css/style.css">
   <script>
       // 변수를 선언합니다.
-      var audio0 = new Audio("https://papago.naver.com/apis/tts/1.9.1_6526-06a9159752bb9dbcb7cee1fd3c5f8056-1533715149895");
-      var audio1 = new Audio("https://papago.naver.com/apis/tts/1.9.1_14883-c7442291a3dadde043fbd0e696e9f8e5-1533717580496");
+      var audio0 = new Audio("https://papago.naver.com/apis/tts/1.9.1_3611-66bcbe5d5850d3c9a972b03dcedf973c-1534903704270");
+      var audio1 = new Audio("https://papago.naver.com/apis/tts/1.9.1_4161-37ab416c570b7e4e3b277caa60759d5f-1534903954390");
       var audio2 = new Audio("https://papago.naver.com/apis/tts/1.9.1_43626-326bf2841f057bfafa6037aacad15222-1533717664342");
       var audio3 = new Audio("https://papago.naver.com/apis/tts/1.9.1_41052-8fb20838545fe186b749add127ff0ddc-1533717724432");
+      var audio4 = new Audio("https://papago.naver.com/apis/tts/1.9.1_17130-5028b62ed4be489430cc5fdbff091c1a-1534904320101");
+      var audio5 = new Audio("https://papago.naver.com/apis/tts/1.9.1_53344-565c3f42f22ce6b838d049ae8dd54efc-1534905980417");
+      var audio6 = new Audio("https://papago.naver.com/apis/tts/1.9.1_46484-5efd9e089eb15c1f7a247e98e2cbadb0-1534906051739");
+      var audio7 = new Audio("https://papago.naver.com/apis/tts/1.9.1_32123-9813f57f4f92f279d703830aa148c203-1534906142644");
+      var audio8 = new Audio("https://papago.naver.com/apis/tts/1.9.1_17206-1a4ba6791fa791f03acce01d8319f2aa-1534906320785");
+      var audio9 = new Audio("https://papago.naver.com/apis/tts/1.9.1_41761-d9d644023e34e3dd3dc02b5146e70338-1534906461642");
+
     //  var audio = new Audio("");
   </script>
 
@@ -30,7 +37,7 @@
             <span>회화</span>
         </a>
         <ul class="paradeiser_children" id="menu1">
-            <li><a href="real_jp_1.html">기본 표현</a></li>
+            <li><a href="real_jp_1.html">기본 회화</a></li>
             <li><a href="real_jp_2.html">위급 상황</a></li>
             <li><a href="real_jp_3.html">교통/길 찾기</a></li>
             <li><a href="real_jp_4.html">숙소</a></li>
@@ -68,20 +75,20 @@
   <ul class="list">
     <li>
       <h3 class="kor">이 가게의 추천 메뉴는 무엇입니까?</h3>
-      <p class="jpn">この店<sup><small>みせ</small></sup>のおすすめメニューは何<sup><small>なん</small></sup>ですか。</p>
-      <p class="kr">코노 미세노 오스스메메뉴우와 난데스카</p>
+      <p class="jpn">この店<sup><small>みせ</small></sup>のおすすめは何<sup><small>なん</small></sup>ですか｡</p>
+      <p class="kr">코노 미세노 오스스메와 난데스까?</p>
       <div class="btndiv"><button class="btnc" onclick="audio0.play()">음성</button></div>
     </li>
     <li>
       <h3 class="kor">얼마나 기다려야 하죠?</h3>
-      <p class="jpn">どのくらい待<sup><small>ま</small></sup>ちますか。</p>
-      <p class="kr">도노쿠라이 마치마스카</p>
+      <p class="jpn">どれくらい待<sup><small>ま</small></sup>ちますか｡</p>
+      <p class="kr">도레쿠라이 마찌마스까?</p>
       <div class="btndiv"><button class="btnc" onclick="audio1.play()">음성</button></div>
     </li>
     <li>
       <h3 class="kor">한국어 메뉴판이 있나요?</h3>
-      <p class="jpn">韓国語<sup><small>かんこくご</small></sup>のメニューがありますか。</p>
-      <p class="kr">칸코쿠고노 메뉴우가 아리마스카</p>
+      <p class="jpn">韓国語<sup><small>かんこくご</small></sup>のメニューはありますか｡</p>
+      <p class="kr">캉꼬꾸고노 메뉴-와 아리마스까?</p>
       <div class="btndiv"><button class="btnc" onclick="audio2.play()">음성</button></div>
     </li>
     <li>
@@ -89,6 +96,42 @@
       <p class="jpn">緑茶<sup><small>りょくちゃ</small></sup>をお願<sup><small>ねが</small></sup>いします。</p>
       <p class="kr">료쿠차오 오네가이시마스</p>
       <div class="btndiv"><button class="btnc" onclick="audio3.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">여기서 먹을게요.</h3>
+      <p class="jpn">ここで食<sup><small>た</small></sup>べます。</p>
+      <p class="kr">코꼬데 타베마스</p>
+      <div class="btndiv"><button class="btnc" onclick="audio4.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">금연석으로 안내해주세요.</h3>
+      <p class="jpn">禁煙席<sup><small>きんえんせき</small></sup>に案内<sup><small>あんない</small></sup>してください。</p>
+      <p class="kr">킹엔세끼니 안나이시떼 쿠다사이</p>
+      <div class="btndiv"><button class="btnc" onclick="audio5.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">잘 먹겠습니다.</h3>
+      <p class="jpn">いただきます。</p>
+      <p class="kr">이따다끼마스</p>
+      <div class="btndiv"><button class="btnc" onclick="audio6.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">이것은 어떻게 먹어야 합니까?</h3>
+      <p class="jpn">これはどう食<sup><small>た</small></sup>べるんですか。</p>
+      <p class="kr">코레와 도- 타베룬데스까?</p>
+      <div class="btndiv"><button class="btnc" onclick="audio7.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">잘 먹었습니다.</h3>
+      <p class="jpn">ご馳走<sup><small>ちそう</small></sup>様<sup><small>さま</small></sup>でした。</p>
+      <p class="kr">고치소-사마데시따</p>
+      <div class="btndiv"><button class="btnc" onclick="audio8.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">계산 부탁드립니다.</h3>
+      <p class="jpn">お勘定<sup><small>かんじょう</small></sup>をお願<sup><small>ねが</small></sup>いします。</p>
+      <p class="kr">오깐죠-오 오네가이시마스</p>
+      <div class="btndiv"><button class="btnc" onclick="audio9.play()">음성</button></div>
     </li>
 <!--
     <li>
