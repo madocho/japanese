@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>리얼 여행 일본어 회화</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/paradeiser.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+      // 변수를 선언합니다.
+      var audio10 = new Audio("https://papago.naver.com/apis/tts/1.9.1_30310-3a350b9cd8d88cbd7b83eaaacaf1ca25-1534907913513");
+      var audio11 = new Audio("https://papago.naver.com/apis/tts/1.9.1_27500-61da283ea70cbbec4fb905a9bba7009a-1534908059368");
+      var audio12 = new Audio("https://papago.naver.com/apis/tts/1.9.1_44959-a79f98ca7827b426350faf5d133d974e-1534908251703");
+      var audio13 = new Audio("https://papago.naver.com/apis/tts/1.9.1_1226-6c67fd44c9e46125f590bea6f196217a-1534908333875");
+      var audio14 = new Audio("https://papago.naver.com/apis/tts/1.9.1_2371-a19cede8eb22e19a496bce16b8c3392a-1534908423832");
+      var audio15 = new Audio("https://papago.naver.com/apis/tts/1.9.1_25897-443785aaa468ca3fd35828af8146bb6d-1534908543520");
+      var audio16 = new Audio("https://papago.naver.com/apis/tts/1.9.1_28206-3c7a65eb1792a9e5da8d921db07230dc-1534908610408");
+      var audio17 = new Audio("https://papago.naver.com/apis/tts/1.9.1_1751-5bfd95714973d177546161050cf11252-1534916698584");
+      var audio18 = new Audio("https://papago.naver.com/apis/tts/1.9.1_33138-3bab9e0063d67be6bae1788c8c9487bd-1534917188441");
+      var audio19 = new Audio("https://papago.naver.com/apis/tts/1.9.1_11273-3e957287f360e065793520789ee1508f-1534917265015");
+  
+    //  var audio = new Audio("");
+  </script>
+
+</head>
+
+<body>
+  <div style="margin-left:-8px;">
+
+    <nav class="paradeiser">
+      <div class="paradeiser_dropdown">
+        <a href="#menu1">
+          <img src="img/thum_a.png" width="30px"/>
+            <span>회화</span>
+        </a>
+        <ul class="paradeiser_children" id="menu1">
+            <li><a href="real_jp_1.html">기본 회화</a></li>
+            <li><a href="real_jp_2.html">위급 상황</a></li>
+            <li><a href="real_jp_3.html">교통/길 찾기</a></li>
+            <li><a href="real_jp_4.html">숙소</a></li>
+            <li><a href="real_jp_5.html">쇼핑</a></li>
+            <li><a href="real_jp_6.html">음식점</a></li>
+            <li><a href="#!"></a></li>
+        </ul>
+      </div>
+        <a href="#menu2">
+          <img src="img/thum_b.png" width="30px"/>
+            <span>단어</span>
+        </a>
+        <ul class="paradeiser_children" id="menu2">
+            <li><a href="real_jp_word_1.html">기본 회화</a></li>
+            <li><a href="real_jp_word_2.html">위급 상황</a></li>
+            <li><a href="real_jp_word_3.html">교통/길 찾기</a></li>
+            <li><a href="real_jp_word_4.html">숙소</a></li>
+            <li><a href="real_jp_word_5.html">쇼핑</a></li>
+            <li><a href="real_jp_word_6.html">음식점</a></li>
+            <li><a href="#!"></a></li>
+        </ul>
+        <a href="real_jp_menu.html">
+          <img src="img/thum_a.png" width="30px"/>
+            <span>메뉴판</span>
+        </a>
+        <a href="http://pf.kakao.com/_Axiawd/chat" target="_blank">
+          <img src="img/thum_b.png" width="30px"/>
+            <span>제보하기</span>
+        </a>
+    </nav>
+
+  <ul class="gnbfoot">
+    <div style="padding-top:10px; padding-bottom:10px;"><font color="red">리얼</font> 여행 일본어 회화</div>
+    <!-- <img src="img/foot.png" width="200px" height="35px" /> -->
+  </ul>
+</div>
+
+  <div id="users" style="margin-bottom:55px;">
+  <input class="search" placeholder="검색" />
+  <button class="sort asc" data-sort="kor">
+    가나다순 정렬
+  </button>
+
+  <ul class="list">
+
+    <li>
+      <h3 class="kor">경찰</h3>
+      <p class="jpn">警察<sup><small>けいさつ</small></sup></p>
+      <p class="kr">케-사쯔</p>
+      <div class="btndiv"><button class="btnc" onclick="audio10.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">구급차</h3>
+      <p class="jpn">救急車<sup><small>きゅうきゅうしゃ</small></sup></p>
+      <p class="kr">큐-뀨-샤</p>
+      <div class="btndiv"><button class="btnc" onclick="audio11.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">여권</h3>
+      <p class="jpn">パスポート</p>
+      <p class="kr">파스뽀-또</p>
+      <div class="btndiv"><button class="btnc" onclick="audio12.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">지갑</h3>
+      <p class="jpn">財布<sup><small>さいふ</small></sup></p>
+      <p class="kr">사이후</p>
+      <div class="btndiv"><button class="btnc" onclick="audio13.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">병원</h3>
+      <p class="jpn">病院<sup><small>びょういん</small></sup></p>
+      <p class="kr">뵤-잉</p>
+      <div class="btndiv"><button class="btnc" onclick="audio14.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">진통제</h3>
+      <p class="jpn">痛<sup><small>いた</small></sup>み止<sup><small>ど</small></sup>め</p>
+      <p class="kr">이따미도메</p>
+      <div class="btndiv"><button class="btnc" onclick="audio15.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">빨리</h3>
+      <p class="jpn">はやく</p>
+      <p class="kr">하야꾸</p>
+      <div class="btndiv"><button class="btnc" onclick="audio16.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">치한</h3>
+      <p class="jpn">痴漢<sup><small>ちかん</small></sup></p>
+      <p class="kr">치깡</p>
+      <div class="btndiv"><button class="btnc" onclick="audio17.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">소매치기</h3>
+      <p class="jpn">スリ</p>
+      <p class="kr">스리</p>
+      <div class="btndiv"><button class="btnc" onclick="audio18.play()">음성</button></div>
+    </li>
+    <li>
+      <h3 class="kor">화장실</h3>
+      <p class="jpn">トイレ</p>
+      <p class="kr">토이레</p>
+      <div class="btndiv"><button class="btnc" onclick="audio19.play()">음성</button></div>
+    </li>
+
+<!--
+    <li>
+      <h3 class="kor"></h3>
+      <p class="jpn"></p>
+      <p class="kr"></p>
+      <div class="btndiv"><button class="btnc" onclick="audio.play()">음성</button></div>
+    </li>
+-->
+  </ul>
+
+</div>
+
+
+<!-- 리스트 검색 -->
+<script src="js/list.min.js"></script>
+
+<script>
+var options = {
+valueNames: [ 'kor' ]
+};
+
+var userList = new List('users', options);
+//# sourceURL=pen.js
+</script>
+<!-- 리스트 검색 끝 -->
+
+</body>
+</html>
